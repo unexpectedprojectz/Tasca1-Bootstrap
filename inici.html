@@ -1,27 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
     <title>Inici</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/cssinici.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <div class="container">
-        <div class="row">
-          <div class="col-sm-4">
-            <h3>Column 1</h3>
-            <p>Lorem ipsum dolor..</p>
-          </div>
-          <div class="col-sm-4">
-            <h3>Column 2</h3>
-            <p>Lorem ipsum dolor..</p>
-          </div>
-          <div class="col-sm-4">
-            <h3>Column 3</h3>
-            <p>Lorem ipsum dolor..</p>
-          </div>
+
+    <nav class="navbar navbar-expand-sm menu1">
+        <h1 id="logo">wegoo</h1>
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link linkmenu1" href="#">Inici</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link linkmenu1" href="#">Login</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link linkmenu1" href="#">Registre</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link linkmenu1" href="#">Seguiment de comandes</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link linkmenu1" href="#">Sobre nosaltres</a>
+            </li>
+        </ul>
+    </nav>
+
+    <nav id="menu2" class="navbar navbar-expand-sm justify-content-center">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link linkmenu2" href="#">Inici</a>
+            </li>
+            <span></span>
+            <li class="nav-item">
+                <a class="nav-link linkmenu2" href="#">Menjar</a>
+            </li>
+            <span></span>
+            <li class="nav-item">
+                <a class="nav-link linkmenu2" href="#">Alimentació</a>
+            </li>
+            <span></span>
+            <li class="nav-item">
+                <a class="nav-link linkmenu2" href="#">Farmàcia</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div id="contenidor" class="container">
+
+      <div class="row">
+            
+        <div class="col-md-6">
+          <h2 class="desc">Tot el que necessites i molt més</h2>
+          <h2 class="desc">és a les teves mans!</h2>
+          <br><br>
+          <h2>Benvingut a Wegoo,</h2>
+          <h2>on podrà trobar productes d'alimentació o farmàcia, així com demanar al seu restaurant preferit.</h2>
         </div>
+
+        <div class="col-md-6">
+          <img src="img/presentacio.png" id="presentacio" class="float-right" width="90%">
+        </div>
+
       </div>
+
+    </div>
+
+    <footer class="text-center">
+          <text id="drets">© Wegoo 2021. Tots els drets reservats.</text>  
+          <div class="float-right icones">
+                <a href="#" class="fa fa-facebook icona"></a><span></span>
+                <a href="#" class="fa fa-twitter icona"></a><span></span>
+                <a href="#" class="fa fa-instagram icona"></a>
+          </div>
+    </footer>
+
 </body>
+
 </html>
