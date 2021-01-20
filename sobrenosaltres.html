@@ -10,69 +10,55 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <style>
-
-    </style>
+    <link rel="stylesheet" type="text/css" href="css/csssobrenosaltres.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-    <nav class="navbar navbar-expand-sm bg-white">
-        <h1 style="color: #00B7C2; padding-top: 0.5%; padding-left: 1%;">wegoo</h1>
+    <nav class="navbar navbar-expand-sm menu1">
+        <h1 id="logo">wegoo</h1>
         <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-                <a class="nav-link" href="#" style="color: #00B7C2;">
-                    Inici
-                </a>
+                <a class="nav-link linkmenu1" href="#">Inici</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#" style="color: #00B7C2;">
-                    Login
-                </a>
+                <a class="nav-link linkmenu1" href="#">Login</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#" style="color: #00B7C2;">
-                    Registre
-                </a>
+                <a class="nav-link linkmenu1" href="#">Registre</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#" style="color: #00B7C2;">
-                    Seguiment de comandes
-                </a>
+                <a class="nav-link linkmenu1" href="#">Seguiment de comandes</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#" style="color: #00B7C2;">
-                    Sobre nosaltres
-                </a>
+                <a class="nav-link linkmenu1" href="#">Sobre nosaltres</a>
             </li>
         </ul>
     </nav>
 
-
-
-    <div class="container" style="margin-top:5%">
+    <div id="contenidor" class="container">
 
         <div class="row">
 
-            <div class="col-sm-6">
+            <div class="col-sm-6 paddingright">
 
                 <form>
                     <div class="form-group mx-sm-3 mb-2">
-                        <h1 class="display-5" style="font-family: Lato; font-size: 38px; margin-bottom: 15%;">Contacte</h1>
-                        <input type="email" class="form-control" id="email" placeholder="Correu electrònic"
-                            style="margin-bottom: 8%;">
+                        <h1 class="titol">Contacte</h1>
+                        <input type="email" class="form-control inputs" id="email" placeholder="Correu electrònic">
                     </div>
 
 
                     <div class="form-group mx-sm-3 mb-2">
-                        <input type="password" class="form-control" id="nom" placeholder="Nom de contacte"
-                            style="margin-bottom: 8%;">
+                        <input type="password" class="form-control inputs" id="nom" placeholder="Nom de contacte">
                     </div>
 
                     <div class="form-group mx-sm-3 mb-2">
-                        <textarea class="form-control" id="missatge" placeholder="Missatge" rows="4"
-                            style="margin-bottom: 5%;"></textarea>
-                        <button type="submit" class="btn float-right" style="background-color:#976DD0; color: white;">Enviar</button>
+                        <textarea class="form-control" id="missatge" placeholder="Missatge" rows="4"></textarea>
+                        <button type="submit" class="btn float-right botons">Enviar</button>
                     </div>
 
 
@@ -80,12 +66,12 @@
 
             </div>
 
-            <div class="col-sm-6">
-                <h1 class="display-5" style="font-family: Lato; font-size: 38px; margin-bottom: 13%;">Termes i condicions</h1>
+            <div class="col-sm-6 paddingleft">
+                <h1 class="titol">Termes i condicions</h1>
 
-                <p class="text-justify" style="font-family: Lato; font-size: 18px;">Wegoo és una companyia tecnològica, l'activitat principal és el desenvolupament
+                <p class="text-justify desc">Wegoo és una companyia tecnològica. L'activitat principal d'aquesta és el desenvolupament
                     i
-                    gestió d'una plataforma tecnològica mitjançant la qual a través d'una aplicació mòbil o d'un web
+                    gestió d'una plataforma tecnològica mitjançant la qual a través d'una aplicació mòbil o d'una web
                     permet a
                     determinades botigues locals d'algunes ciutats en diferents territoris oferir o inserir els seus
                     productes
@@ -95,21 +81,19 @@
                     lliurament immediat dels productes.
                 </p>
 
-                <img src="img/presentacion.png" class="float-right" width="44%" height="34%" alt="Responsive image">
+                <img src="img/presentacio.png" class="float-right" width="44%">
 
             </div>
 
         </div>
     </div>
 
-    <footer class="bg-white text-center text-lg-start">
-        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0)">
-            <div class="rounded float-right">
-                <a href="#" class="fa fa-facebook" class="text-center p-3" style="color: #00B7C2;"></a>
-                <a href="#" class="fa fa-twitter" class="text-center p-3" style="color: #00B7C2;"></a>
-                <a href="#" class="fa fa-instagram" class="text-center p-3" style="color: #00B7C2;"></a>
-            </div>
-            <p style="color: #8190A5; margin-bottom: 0%;"></p>© Wegoo 2021. Tots els drets reservats.</p>
+    <footer class="text-center">
+        <text id="drets">© Wegoo 2021. Tots els drets reservats.</text>  
+        <div class="float-right icones">
+              <a href="#" class="fa fa-facebook icona"></a><span></span>
+              <a href="#" class="fa fa-twitter icona"></a><span></span>
+              <a href="#" class="fa fa-instagram icona"></a>
         </div>
     </footer>
 
