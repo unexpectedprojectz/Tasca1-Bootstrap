@@ -71,3 +71,20 @@ a:hover{
 .dropdown-item {
     color: #00B7C2;
 }
+
+details[open] summary~* {
+    animation: sweep .5s ease-in-out;
+}
+
+/* control dels punts de trajectòria */
+@keyframes sweep {
+    0% {
+        opacity: 0;
+        margin-left: -10px
+    }
+
+    100% {
+        opacity: 1;
+        margin-left: 0px
+    }
+}
