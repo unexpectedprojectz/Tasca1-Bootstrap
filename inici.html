@@ -10,15 +10,17 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <script src="https://use.fontawesome.com/releases/v5.15.2/js/all.js" data-auto-a11y="true"></script>
     <link rel="stylesheet" type="text/css" href="css/cssinici.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<div class="container-fluid">
 
-    <nav class="navbar navbar-expand-sm menu1">
+    <nav class="navbar navbar-expand menu1">
         <h1 id="logo">wegoo</h1>
         <ul class="navbar-nav ml-auto">
             <li class="nav-item">
@@ -34,19 +36,35 @@
                 <a class="nav-link linkmenu1" href="#">Seguiment de comandes</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link linkmenu1" href="#">Sobre nosaltres</a>
+                <a class="nav-link linkmenu1" href="sobrenosaltres.html">Sobre nosaltres</a>
+            </li>
+            <li class="nav-item">
+                <div class="dropdown">
+                    <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                      Tasques
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                      <li><a class="dropdown-item" href="inici.html">Tasca 1</a></li>
+                      <li><a class="dropdown-item" href="/tasques/tasca2.html">Tasca 2</a></li>
+                      <li><a class="dropdown-item" href="/tasques/tasca3.html">Tasca 3</a></li>
+                      <li><a class="dropdown-item" href="/tasques/tasca4.html">Tasca 4</a></li>
+                      <li><a class="dropdown-item" href="/tasques/tasca5.html">Tasca 5</a></li>
+                      <li><a class="dropdown-item" href="/tasques/tasca6.html">Tasca 6</a></li>
+                      <li><a class="dropdown-item" href="/tasques/tasca7.html">Tasca 7</a></li>
+                    </ul>
+                </div>
             </li>
         </ul>
     </nav>
 
-    <nav id="menu2" class="navbar navbar-expand-sm justify-content-center">
+    <nav id="menu2" class="navbar navbar-expand justify-content-center">
         <ul class="navbar-nav">
             <li class="nav-item">
                 <a class="nav-link linkmenu2" href="#">Inici</a>
             </li>
             <span></span>
             <li class="nav-item">
-                <a class="nav-link linkmenu2" href="#">Menjar</a>
+                <a class="nav-link linkmenu2" href="menjar.html">Menjar</a>
             </li>
             <span></span>
             <li class="nav-item">
@@ -63,7 +81,7 @@
 
       <div class="row">
             
-        <div class="col-md-6">
+        <div class="col-6">
           <h2 class="desc">Tot el que necessites i molt més</h2>
           <h2 class="desc">és a les teves mans!</h2>
           <br><br>
@@ -71,7 +89,7 @@
           <h2>on podrà trobar productes d'alimentació o farmàcia, així com demanar al seu restaurant preferit.</h2>
         </div>
 
-        <div class="col-md-6">
+        <div class="col-6">
           <img src="img/presentacio.png" id="presentacio" class="float-right" width="90%">
         </div>
 
@@ -82,12 +100,12 @@
     <footer class="text-center">
           <text id="drets">© Wegoo 2021. Tots els drets reservats.</text>  
           <div class="float-right icones">
-                <a href="#" class="fa fa-facebook icona"></a><span></span>
-                <a href="#" class="fa fa-twitter icona"></a><span></span>
-                <a href="#" class="fa fa-instagram icona"></a>
+                <a href="#" class="fab fa-facebook icona"></a><span></span>
+                <a href="#" class="fab fa-twitter icona"></a><span></span>
+                <a href="#" class="fab fa-instagram icona"></a>
           </div>
     </footer>
 
-</body>
+</div>
 
 </html>

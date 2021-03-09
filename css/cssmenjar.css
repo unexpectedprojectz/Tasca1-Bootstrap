@@ -60,8 +60,18 @@ span{
 
 a:hover{
     text-decoration: none;
+    color: #1F618D;
 }
 
 #drets {
     color: #E3DFC8;
+}
+
+.dropdown-toggle {
+    color: #00B7C2;
+    font-weight: bold;
+}
+
+.dropdown-item {
+    color: #00B7C2;
 }
